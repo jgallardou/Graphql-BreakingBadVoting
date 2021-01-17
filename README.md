@@ -1,3 +1,5 @@
 # breaking-bad-graphql
 
-Backend - Proyecto de votaciones de personajes de Breaking Bad, utilizacion de Graphql en conjunto con MongoDB
+recordar indicar conexion MongoDb en archivo .ENV
+
+Para iniciar el proyecto ejecutar: npm run start:dev
