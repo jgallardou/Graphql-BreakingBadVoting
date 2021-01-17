@@ -1,3 +1,3 @@
 # breaking-bad-graphql
 
-Proyecto de votacion de personajes de la serie Breaking Bad
+Backend - Proyecto de votaciones de personajes de Breaking Bad, utilizacion de Graphql en conjunto con MongoDB
