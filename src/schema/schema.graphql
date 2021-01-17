@@ -1,0 +1,34 @@
+type Query {
+    characters:[Character!]!
+    character(id:ID!):Character
+}
+
+
+type Character{
+    id:ID!,
+    name:String!,
+    actor:String!,
+    description:String!,
+    total_episodes:Int!,
+    photo:String!,
+    votes:Int!,
+    url:String!
+}
+
+type ResultOperation{
+    status:Boolean!,
+    message:String!,
+    character:Character
+}
+
+type Mutation{
+    addVote(character:ID!):ResultOperation!
+    updateVote(id:ID!,character:ID!):ResultOperation!
+    deleteVote(id:ID!):ResultOperation!
+}
+
+
+type Subscription{
+    changeVotes:[Character!]!
+    changeVote(id:ID!):Character!
+}
